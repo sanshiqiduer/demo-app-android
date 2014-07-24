@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/px_to_dip_108"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/people_select_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_to_dip_16"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:maxHeight="10.0dip" />
+
+    <ImageView
+        android:id="@+id/people_select_portrait"
+        android:layout_width="@dimen/px_to_dip_82"
+        android:layout_height="@dimen/px_to_dip_82"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/px_to_dip_16"
+        android:layout_marginLeft="@dimen/px_to_dip_16"
+        android:layout_marginTop="@dimen/px_to_dip_16"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_portrait" />
+
+    <TextView
+        android:id="@+id/people_select_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_to_dip_18"
+        android:layout_marginRight="@dimen/px_to_dip_30"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#252525"
+        android:textSize="@dimen/px_to_dip_28" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="welcome_onrange">#FF6402</color>
+    <color name="title_bg">#3498DB</color>
+    <color name="item_conversation_list_username">#252525</color>
+    <color name="item_conversation_list_message">#8c8c8c</color>
+    <color name="item_conversation_list_time">#cacaca</color>
+    <color name="rich_image_bg_color">#F3C44E</color>
+    <color name="rich_take_photo_bg_color">#97a0e5</color>
+    <color name="rich_location_bg_color">#79cc60</color>
+    <color name="rich_voice_bg_color">#47bbd4</color>
+    <color name="rich_add_bg_color">#bdbdbd</color>
+    <!-- conversation item -->
+    <color name="conversation_item_text_color_right">#FFFFFF</color>
+    <color name="conversation_item_text_color_left">#666666</color>
+    <color name="view_message_bar_edit_text">#F8F8F8</color>
+    <color name="view_message_bar_control_color">#aab2ba</color>
+    
+    
+    <color name="dialog_conversation_line_color">#3498db</color>
+    
+    <!-- conversation_list_item hover -->
+    <color name="conversation_list_item_normal_color">#FFFFFF</color>
+    <color name="conversation_list_item_hover_color">#FAFAFA</color>
+    <color name="conversation_list_item_istop_bg_color">#F4FBFF</color>
+    
+    <color name="rong_text_color_primary">#252525</color>
+    <color name="rong_text_color_secondary">#8e8e8e</color>
+    <color name="rong_text_color_tertiary">#cbcbcb</color>
+    <color name="rong_text_color_primary_inverse">@android:color/white</color>
+
+</resources>

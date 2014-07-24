@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchGroup">
+        <attr name="orientation">
+            <flag name="horizontal" value="0"></flag>
+            <flag name="vertical" value="1"></flag>
+        </attr>
+        <attr name="pinned_view" format="reference" />
+        <attr name="pinned_item" format="reference" />
+        <attr name="pinned_item_array" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="PullLayout">
+        <attr name="pull_limit" format="dimension" />
+        <attr name="support_over" format="boolean" />
+        <attr name="hold_adjust_type">
+            <flag name="not_adjust" value="0"></flag>
+            <flag name="adjust_content" value="1"></flag>
+            <flag name="elasticity_adjust" value="2"></flag>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="AsyncImageView">
+        <attr name="changemeasure" format="boolean" />
+        <attr name="defDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SlipButton">
+        <attr name="slipButtonBG" format="integer" />
+        <attr name="slipButtonOff" format="integer" />
+        <attr name="slipButtonOn" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CoverFrameLayout">
+        <attr name="coverView" format="reference" />
+        <attr name="triggerView" format="reference" />
+        <attr name="triggerLimit" format="integer" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/px_to_dip_22"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/conversation_message_image_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px_to_dip_20"
+        android:layout_marginBottom="@dimen/px_to_dip_20"
+        android:background="#d3d3d3"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/px_to_dip_10"
+        android:paddingBottom="@dimen/px_to_dip_10"
+        android:paddingLeft="@dimen/px_to_dip_20"
+        android:paddingRight="@dimen/px_to_dip_20"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/px_to_dip_25"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_to_dip_22"
+        android:background="#EBEBEB"
+        android:orientation="horizontal" >
+
+        <io.rong.imkit.veiw.AsyncImageView
+            android:id="@+id/conversation_message_image_other_portrait"
+            android:layout_width="@dimen/px_to_dip_82"
+            android:layout_height="@dimen/px_to_dip_82"
+            android:layout_marginLeft="@dimen/px_to_dip_16"
+            android:layout_marginRight="@dimen/px_to_dip_16"
+            app:defDrawable="@drawable/default_portrait"
+            android:src="@drawable/default_portrait" />
+
+        <LinearLayout
+            android:id="@+id/text_right_image_layout_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/conversation_message_image_send_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/send_message_fail_normal" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/conversation_bubble_blue"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/conversation_message_image_username_right_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingLeft="@dimen/px_to_dip_15"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" >
+
+                    <ImageView
+                        android:id="@+id/conversation_message_image_right_tv"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="left"
+                        android:contentDescription="@string/content_description"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/progress_textview"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:background="#80000000"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_left_image_layout_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/conversation_bubble_white"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/conversation_message_image_username_left_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="@dimen/px_to_dip_15"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/conversation_message_image_left_tv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="left"
+                    android:contentDescription="@string/content_description"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <io.rong.imkit.veiw.AsyncImageView
+            android:id="@+id/conversation_message_image_self_portrait"
+            android:layout_width="@dimen/px_to_dip_82"
+            android:layout_height="@dimen/px_to_dip_82"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/px_to_dip_16"
+            android:layout_marginRight="@dimen/px_to_dip_16"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/default_portrait"
+            app:defDrawable="@drawable/default_portrait"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

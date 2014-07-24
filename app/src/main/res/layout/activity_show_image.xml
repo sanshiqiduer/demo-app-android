@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <io.rong.imkit.veiw.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_to_dip_96"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:id="@+id/showimage_btm_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/px_to_dip_106"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@android:id/button1"
+            android:layout_width="@dimen/px_to_dip_124"
+            android:layout_height="@dimen/px_to_dip_56"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/px_to_dip_28"
+            android:background="@drawable/show_image_btn_bg"
+            android:text="@string/show_image_reselect"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_to_dip_36" />
+
+        <Button
+            android:id="@android:id/button2"
+            android:layout_width="@dimen/px_to_dip_124"
+            android:layout_height="@dimen/px_to_dip_56"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_to_dip_28"
+            android:background="@drawable/show_image_btn_bg"
+            android:text="@string/show_image_comfirm"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_to_dip_36" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/action_bar"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="53dp"
+        android:contentDescription="@string/content_description"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

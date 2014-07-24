@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="image_content_description">"image_content_description"</string>
+    <!--register activity -->
+    <string name="register_is_null">"邮箱、密码、昵称 不能为空"</string>
+    <string name="register_success">"注册成功"</string>
+    <string name="register_failure">"注册失败"</string>
+    <string name="register_input_email">"输入邮箱"</string>
+    <string name="register_input_password">"输入密码"</string>
+    <string name="register_input_nickname">"输入昵称"</string>
+    <string name="register_btn_argee">"注册"</string>
+    <string name="register_email_error">"邮箱地址不合法"</string>
+    <!-- login activity -->
+    <string name="login_edit_username">"用户名"</string>
+    <string name="login_edit_password">"密码"</string>
+    <string name="login_btn_register">"注册"</string>
+    <string name="login_btn_login">"登录"</string>
+    <string name="login_success">"登录成功"</string>
+    <string name="login_failure">"登录失败"</string>
+    <string name="login_erro_is_null">"用户名、密码不能为空"</string>
+    <string name="login_version_date">"日期:%1$s"</string>
+    <string name="login_version_code">"版本:%1$s"</string>
+    <!-- functions  activity-->
+    <string name="function_list_logout">"注 销 用 户"</string>
+
+</resources>

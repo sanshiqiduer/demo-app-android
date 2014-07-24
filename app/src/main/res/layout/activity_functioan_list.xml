@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <io.rong.imkit.veiw.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_to_dip_96" />
+
+
+    <ListView
+        android:layout_marginTop="@dimen/px_to_dip_96"
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdgeLength="0.0sp"
+        android:footerDividersEnabled="false"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="@dimen/px_to_dip_100"
+        android:scrollbars="vertical"
+        android:scrollingCache="false" />
+
+
+    <Button
+        android:id="@android:id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_to_dip_80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px_to_dip_80"
+        android:background="#ffff4444"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/px_to_dip_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/px_to_dip_20"
+        android:layout_marginRight="@dimen/px_to_dip_20"
+        android:layout_marginBottom="@dimen/px_to_dip_20"
+        android:text="@string/function_list_logout" >
+    </Button>
+
+</RelativeLayout>

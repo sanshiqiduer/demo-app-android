@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <io.rong.imkit.veiw.ActionBar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_to_dip_96" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/px_to_dip_22"
+                android:layout_marginRight="@dimen/px_to_dip_22"
+                android:layout_marginTop="@dimen/px_to_dip_20"
+                android:background="#d3d3d3"
+                android:orientation="horizontal" >
+
+                <io.rong.imkit.veiw.RongGridView
+                    android:id="@android:id/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:layout_marginBottom="@dimen/px_to_dip_10"
+                    android:columnWidth="50dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/px_to_dip_52"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/px_to_dip_20"
+                    android:verticalSpacing="@dimen/px_to_dip_26" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_96"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_36" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_to_dip_10"
+                    android:text="@string/conversation_setting_istop"
+                    android:textColor="#252525"
+                    android:textSize="@dimen/px_to_dip_30" />
+
+                <io.rong.imkit.veiw.SlipButton
+                    android:background="@android:color/black"
+                    android:id="@android:id/button1"
+                    android:gravity="center"
+                    android:layout_width="@dimen/px_to_dip_176"
+                    android:layout_height="@dimen/px_to_dip_46"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/px_to_dip_10" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_2"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_34"
+                android:background="#e4e4e4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_96"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_36" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_to_dip_10"
+                    android:text="@string/conversation_setting_notify"
+                    android:textColor="#252525"
+                    android:textSize="@dimen/px_to_dip_30" />
+
+                <io.rong.imkit.veiw.SlipButton
+                    android:id="@android:id/button2"
+                    android:layout_width="@dimen/px_to_dip_176"
+                    android:layout_height="@dimen/px_to_dip_46"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/px_to_dip_10" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_2"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_34"
+                android:background="#e4e4e4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_96"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_36" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_to_dip_10"
+                    android:text="@string/conversation_setting_set_bg"
+                    android:textColor="#252525"
+                    android:textSize="@dimen/px_to_dip_30" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_2"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_34"
+                android:background="#e4e4e4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_96"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_36" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_to_dip_10"
+                    android:text="@string/conversation_setting_history_message"
+                    android:textColor="#252525"
+                    android:textSize="@dimen/px_to_dip_30" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_2"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_34"
+                android:background="#e4e4e4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_96"
+                android:layout_marginLeft="@dimen/px_to_dip_34"
+                android:layout_marginRight="@dimen/px_to_dip_36" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_to_dip_10"
+                    android:text="@string/conversation_setting_clear_message"
+                    android:textColor="#252525"
+                    android:textSize="@dimen/px_to_dip_30" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@android:id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_to_dip_80"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_to_dip_80"
+                android:background="#ffff4444"
+                android:layout_marginLeft="@dimen/px_to_dip_36"
+                android:layout_marginRight="@dimen/px_to_dip_36"
+                android:layout_marginBottom="@dimen/px_to_dip_60"
+                android:text="@string/conversation_setting_discussion_exit" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

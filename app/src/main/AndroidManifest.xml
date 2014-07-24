@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.rong.imkit.demo" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FunctionListActivity"
+            android:screenOrientation="portrait" />
+        <!-- begin imkit request -->
+
+        <activity
+            android:name="io.rong.imkit.activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="io.rong.imkit.conversation.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.imkit.RongActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.imkit.push.action"/>
+                <data android:scheme="rong" android:host="io.rong.imkit.demo"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.rong.imkit.RongSingleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="io.rong.imkit.conversationList.action" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.rong.imkit.activity.ConversationSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.PublishShowImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.ShowDownloadImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.imkit.activity.FriendListActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="io.rong.imkit.service.RCloudService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- end -->
+
+
+        <!-- begin imlib request -->
+
+        <service
+            android:name="io.rong.imlib.PushService"
+            android:process="io.rong.push.service" />
+        <service android:name="io.rong.imlib.RongService" />
+
+        <receiver android:name="io.rong.imlib.RongReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- end -->
+    </application>
+
+</manifest>

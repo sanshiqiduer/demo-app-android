@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:oneshot="false" android:id="@+id/volume_animation" >
+	<item android:drawable="@drawable/volume_zero" android:duration="100" />
+	<item android:drawable="@drawable/volume_one" android:duration="200" />
+	<item android:drawable="@drawable/volume_two" android:duration="300" />
+	<item android:drawable="@drawable/volume_three" android:duration="400" />
+	<item android:drawable="@drawable/volume_four" android:duration="500" />
+</animation-list>

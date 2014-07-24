@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/px_to_dip_119"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/people_select_portrait"
+        android:layout_width="@dimen/px_to_dip_82"
+        android:layout_height="@dimen/px_to_dip_82"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="@dimen/px_to_dip_18"
+        android:layout_marginLeft="@dimen/px_to_dip_22"
+        android:layout_marginTop="@dimen/px_to_dip_18"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_portrait" />
+
+    <TextView
+        android:id="@+id/people_select_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_to_dip_34"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#252525"
+        android:textSize="@dimen/px_to_dip_28" />
+
+</LinearLayout>

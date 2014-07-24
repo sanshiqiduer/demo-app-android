@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="@dimen/px_to_dip_228"
+        android:layout_height="@dimen/px_to_dip_228"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px_to_dip_142"
+        android:contentDescription="@string/image_content_description"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px_to_dip_60"
+        android:layout_marginRight="@dimen/px_to_dip_60"
+        android:layout_marginTop="@dimen/px_to_dip_53"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/username_edit_icon"
+            android:drawablePadding="@dimen/px_to_dip_20"
+            android:hint="@string/login_edit_username"
+            android:padding="@dimen/px_to_dip_10"
+            android:singleLine="true"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@android:id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_to_dip_40"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/password_edit_icon"
+            android:drawablePadding="@dimen/px_to_dip_20"
+            android:hint="@string/login_edit_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/px_to_dip_10"
+            android:singleLine="true"
+            android:textColor="#ffffff" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_to_dip_53"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@android:id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_btn"
+                android:text="@string/login_btn_login"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+
+            <Button
+                android:id="@android:id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_to_dip_76"
+                android:background="@drawable/login_register_btn"
+                android:text="@string/login_btn_register"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/version_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_to_dip_60"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/build_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_to_dip_30"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
