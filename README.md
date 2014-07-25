@@ -13,6 +13,7 @@
 **Gradle 1.11+**
 
 **RongIMSDK 0.9.5**
+
 **Android Support V4**
 
 *在DemoContext中init方法中填入申请的APP_Key测试，并在DemoApi中配置HOST指向到自己的auth服务上*
