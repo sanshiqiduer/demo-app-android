@@ -13,8 +13,13 @@
 **Gradle 1.11+**
 
 **RongIMSDK 0.9.5**
+**Android Support V4**
 
-*在DemoContext中init方法中填入申请的APP_Key测试*
+*在DemoContext中init方法中填入申请的APP_Key测试，并在DemoApi中配置HOST指向到自己的auth服务上*
+
+*测试服务器搭建请参照<https://github.com/rongcloud/auth-service-nodejs>*
+
+服务器方面需要配置conf.json中的appKey属性完成验证
 
 #### 注意事项：
 
@@ -23,6 +28,7 @@ imkit.jar中已经集成如下开源库为防重复引用特此提示
 * com.sea_monster:core_jar:0.0.19
 * com.github.chrisbanes.bitmapcache:library:2.3@jar
 * com.jakewharton:disklrucache:2.0.2@jar
+
 
 **如需混淆请在混淆脚本中加入如下代码。**
 
