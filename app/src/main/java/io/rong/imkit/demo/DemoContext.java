@@ -90,7 +90,7 @@ public class DemoContext {
          * 第三个参数，push消息通知所要打个的action页面
          * 第四个参数，push消息中可以自定义push图标
          */
-        RongIM.init(context, "官网注册apkkey", "io.rong.imkit.conversationList.action", R.drawable.ic_launcher);
+        RongIM.init(context, "e0x9wycfx7flq", "io.rong.imkit.conversationList.action", R.drawable.ic_launcher);
 
         //http初始化 用于登录、注册使用
         initHttp();
