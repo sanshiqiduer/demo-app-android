@@ -16,11 +16,13 @@
 
 **Android Support V4**
 
-*在DemoContext中init方法中填入申请的APP_Key测试，并在DemoApi中配置HOST指向到自己的auth服务上*
+*如需使用自行申请APP_Key测试，需要搭建自己的auth服务器*
 
 *测试服务器搭建请参照<https://github.com/rongcloud/auth-service-nodejs>*
 
 服务器方面需要配置conf.json中的appKey属性完成验证
+
+*在DemoContext中init方法中填入申请的APP_Key测试，并在DemoApi中配置HOST指向到自己的auth服务上*
 
 #### 注意事项：
 
